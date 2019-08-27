@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    name: test
+    url: jdbc:mysql://localhost:3306/ymall?serverTimezone=GMT
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath:/site/pushy/ymall/dao/xml/*Mapper.xml
+  typeAliasesPackage: site.pushy.ymall.pojo
